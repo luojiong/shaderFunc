@@ -1,3 +1,7 @@
+##shader 学习资源
+### https://www.shadertoy.com/
+
+
 ## shader functions
 
 ### random2d 
