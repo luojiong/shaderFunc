@@ -46,5 +46,10 @@ float noise (in vec2 st) {
             (c - a)* u.y * (1.0 - u.x) +
             (d - b) * u.x * u.y;
 }
-
+### tiles
+```glsl
+   vec2 tiles(_st,zoom){
+       _st *= zoom;
+       return fract(_st);
+   }
 ```
