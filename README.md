@@ -54,7 +54,7 @@ float noise (in vec2 st) {
        return fract(_st);
    }
 ```
-### roatate2d
+### rotate2d
 ```glsl
 mat2 rotate2D(vec2 _st, float _angle){
     return mat2(cos(_angle),-sin(_angle),sin(_angle),cos(_angle));
