@@ -49,8 +49,15 @@ float noise (in vec2 st) {
 ```
 ### tiles
 ```glsl
-   vec2 tiles(_st,zoom){
+   vec2 tiles(vec2 _st,float zoom){
        _st *= zoom;
        return fract(_st);
    }
+```
+### roatate2d
+```glsl
+mat2 rotate2D(vec2 _st, float _angle){
+    return mat2(cos(_angle),-sin(_angle),sin(_angle),cos(_angle));
+}
+
 ```
