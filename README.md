@@ -1,26 +1,22 @@
 
-## shader functions
+# shader functions
 
-### random2d 
+## random2d 
 ```glsl
 float random (vec2 st) {
-    return fract(sin(dot(st.xy,
-                         vec2(12.9898,78.233)))*
-        43758.5453123);
+    return fract(sin(dot(st.xy,vec2(12.9898,78.233)))*43758.5453123);
 }
 
 ```
-### circle
+## circle
 ```glsl
 float circle(in vec2 _st, in float _radius){
     vec2 l = _st-vec2(0.5);
-    return 1.-smoothstep(_radius-(_radius*0.01),
-                         _radius+(_radius*0.01),
-                         dot(l,l)*4.0);
+    return 1.-smoothstep(_radius-(_radius*0.01), _radius+(_radius*0.01),dot(l,l)*4.0);
 }
 
 ```
-### noise2d
+## noise2d
 ```glsl
 float noise (in vec2 st) {
     vec2 i = floor(st);
@@ -44,14 +40,14 @@ float noise (in vec2 st) {
             (d - b) * u.x * u.y;
 }
 ```
-### tiles
+## tiles
 ```glsl
    vec2 tiles(vec2 _st,float zoom){
        _st *= zoom;
        return fract(_st);
    }
 ```
-### rotate2d
+## rotate2d
 ```glsl
 mat2 rotate2D(vec2 _st, float _angle){
     return mat2(cos(_angle),-sin(_angle),sin(_angle),cos(_angle));
