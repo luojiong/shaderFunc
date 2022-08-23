@@ -314,7 +314,7 @@ float cnoise(vec2 P){
 }
 ```
 
-```
+```glsl
 //	Classic Perlin 3D Noise 
 //	by Stefan Gustavson
 //
