@@ -213,7 +213,7 @@ float pNoise(vec2 p, int res){
 }
 ```
 
-```
+```glsl
 #define M_PI 3.14159265358979323846
 
 float rand(vec2 co){return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);}
@@ -274,7 +274,7 @@ float perlin(vec2 p, float dim) {
 
 ##  Classic Perlin Noise
 
-```
+```glsl
 //	Classic Perlin 2D Noise 
 //	by Stefan Gustavson
 //
@@ -391,7 +391,7 @@ float cnoise(vec3 P){
 }
 ```
 
-```
+```glsl
 //	Classic Perlin 3D Noise 
 //	by Stefan Gustavson
 //
@@ -667,7 +667,7 @@ float cnoise(vec4 P, vec4 rep){
 
 ### [Simplex Noise](http://en.wikipedia.org/wiki/Simplex_noise)
 
-```
+```glsl
 // Simplex 2D noise
 //
 vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
@@ -700,7 +700,7 @@ float snoise(vec2 v){
 }
 ```
 
-```
+```glsl
 //	Simplex 3D Noise 
 //	by Ian McEwan, Ashima Arts
 //
@@ -777,7 +777,7 @@ float snoise(vec3 v){
 }
 ```
 
-```
+```glsl
 //	Simplex 4D Noise 
 //	by Ian McEwan, Ashima Arts
 //
@@ -873,7 +873,7 @@ float snoise(vec4 v){
 }
 ```
 
-```
+```glsl
 // 	<www.shadertoy.com/view/XsX3zB>
 //	by Nikita Miropolskiy
 
@@ -938,7 +938,7 @@ float snoiseFractal(vec3 m) {
 
 ### NormalMap Noise
 
-```
+```glsl
 vec3 normalNoise(vec2 _st, float _zoom, float _speed){
 	vec2 v1 = _st;
 	vec2 v2 = _st;
@@ -958,7 +958,7 @@ vec3 normalNoise(vec2 _st, float _zoom, float _speed){
 ## VoroNoise
 
 
-```
+```glsl
 //	<https://www.shadertoy.com/view/Xd23Dh>
 //	by inigo quilez <http://iquilezles.org/www/articles/voronoise/voronoise.htm>
 //
@@ -997,7 +997,7 @@ float iqnoise( in vec2 x, float u, float v ){
 
 
 
-```
+```glsl
 //	https://www.shadertoy.com/view/lsjGWD
 //	by Pietro De Nicola
 //
@@ -1079,7 +1079,7 @@ float fbm( in vec2 p ){
 
 ## [Fractional Brownian motion](http://en.wikipedia.org/wiki/Fractional_Brownian_motion)
 
-```
+```glsl
 #define NUM_OCTAVES 5
 
 float fbm(float x) {
@@ -1123,7 +1123,7 @@ float fbm(vec3 x) {
 }
 ```
 
-```
+```glsl
 // 	<https://www.shadertoy.com/view/MdX3Rr>
 //	by inigo quilez
 //
