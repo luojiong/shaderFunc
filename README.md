@@ -56,7 +56,7 @@ mat2 rotate2D(vec2 _st, float _angle){
 ```
 ## Generic 1,2,3 Noise
 
-```
+```glsl
 float rand(float n){return fract(sin(n) * 43758.5453123);}
 
 float noise(float p){
@@ -72,7 +72,7 @@ float noise(vec2 n) {
 }
 ```
 
-```
+```glsl
 float rand(vec2 n) { 
 	return fract(sin(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);
 }
@@ -89,7 +89,7 @@ float noise(vec2 p){
 }
 ```
 
-```
+```glsl
 float mod289(float x){return x - floor(x * (1.0 / 289.0)) * 289.0;}
 vec4 mod289(vec4 x){return x - floor(x * (1.0 / 289.0)) * 289.0;}
 vec4 perm(vec4 x){return mod289(((x * 34.0) + 1.0) * x);}
@@ -117,7 +117,7 @@ float noise(vec3 p){
 }
 ```
 
-```
+```glsl
 //	<https://www.shadertoy.com/view/4dS3Wd>
 //	By Morgan McGuire @morgan3d, http://graphicscodex.com
 //
@@ -173,7 +173,7 @@ float noise(vec3 x) {
 
 ## Perlin Noise 
 
-```
+```glsl
 float rand(vec2 c){
 	return fract(sin(dot(c.xy ,vec2(12.9898,78.233))) * 43758.5453);
 }
