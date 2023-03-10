@@ -5,6 +5,10 @@
 * http://tobyschachman.com/Shadershop/editor/
 * https://graphtoy.com/
 
+# GLSL Docs
+
+* https://registry.khronos.org/OpenGL-Refpages/gl4/html/indexflat.php
+
 
 # shader functions
 
