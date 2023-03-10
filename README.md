@@ -2,7 +2,6 @@
 
 * https://www.desmos.com
 * https://cineshader.com/view/3lcSR8
-* https://thebookofshaders.com/edit.php
 * http://tobyschachman.com/Shadershop/editor/
 * https://graphtoy.com/
 
