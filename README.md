@@ -7,6 +7,7 @@
 
 # 动画曲线函数
 * https://easings.net/
+* https://iquilezles.org/articles/functions/
 
 # GLSL Docs
 
