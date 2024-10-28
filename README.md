@@ -21,6 +21,15 @@
 
 # shader functions
 
+## logLerp
+```glsl
+//对数线性插值 能解决大数字下 小数插值丢失问题
+float logLerp(float a, float b, float t) {
+    return exp((1.0 - t) * log(a) + t * log(b));
+}
+
+```
+
 ## nlerp
 
 ```glsl 
