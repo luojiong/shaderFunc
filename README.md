@@ -32,7 +32,7 @@ vec3  Slerp(vec3 startVec, vec3 endVec, float t){
 
   vec3 p = normalize(endVec - startVec  *  cosTheta);
 
-  return startVec * cos(theta) _ orthogonalVec * sin(theta);
+  return startVec * cos(theta)  + orthogonalVec * sin(theta);
 }
 	
 ```
