@@ -12,6 +12,36 @@
 
 # shader functions
 
+
+## lerp
+
+```glsl
+   //lerp  线性差值 从 A向量 插值到B 向量
+
+
+ float lerp(float a, float b, float t) {
+    return a + t * (b - a);
+}
+
+ 
+
+```
+
+## inverseLerp
+```glsl
+
+   // 给定 向量AB 求 向量P在向量AB中的距离中的百分比
+ 
+
+   float inverseLerp(float minValue, float maxValue, float value){
+	float  value = (value - minValue) /  (maxValue - minValue);
+	value = clamp(value, 0, 1);
+	return value;
+  }
+
+ 
+
+```
 ## random2d 
 ```glsl
 float random (vec2 st) {
