@@ -6,7 +6,7 @@
 * https://graphtoy.com/
 
 # 动画曲线函数
-*https://easings.net/
+* https://easings.net/
 
 # GLSL Docs
 
