@@ -39,7 +39,24 @@
 	return value;
   }
 
- 
+```
+
+
+## remap
+
+```glsl
+//重映射 将某个范围内的值映射到另外一个范围
+
+float  remap(
+	float inMin, float inMax,
+	float outMin, outMax,
+	float currentValue){
+
+	float = inverseLerp(currentValue,inMin,inMax);
+
+	return lerp(outMin, outMax, t);
+}
+
 
 ```
 ## random2d 
