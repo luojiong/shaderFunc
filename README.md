@@ -13,6 +13,30 @@
 # shader functions
 
 
+## softMax
+
+```glsl
+
+float softMax(float a, float b, float k) {
+    float expA = exp(k * a);
+    float expB = exp(k * b);
+    return (a * expA + b * expB) / (expA + expB);
+}
+
+```
+
+
+## softMin
+
+```glsl
+
+float softMin(float a, float b, float k) {
+    float expA = exp(-k * a);
+    float expB = exp(-k * b);
+    return (a * expA + b * expB) / (expA + expB);
+}
+
+```
 ## lerp
 
 ```glsl
