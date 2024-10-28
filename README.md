@@ -22,7 +22,23 @@
 # shader functions
 
 
+## Slerp 
+
+```glsl 
+ //球面插值  能对四元数线性差值 并且能避免 两个向量垂直时产生直线问题
+vec3  Slerp(vec3 startVec, vec3 endVec, float t){
+   float  cosTheta = clamp(dot(startVec, endVec), -1.0,1.0);
+   float theta = acos(cosTheta) * t;
+
+  vec3 p = normalize(endVec - startVec  *  cosTheta);
+
+  return startVec * cos(theta) _ orthogonalVec * sin(theta);
+}
+	
+```
+
 ## softMax
+
 
 ```glsl
 
