@@ -9,6 +9,11 @@
 * https://easings.net/
 * https://iquilezles.org/articles/functions/
 
+# 色彩空间
+* https://bottosson.github.io/posts/oklab/ (oklab最好的线性插值颜色)
+* RGB(可转换线性颜色)
+* HSL(极坐标颜色)
+
 # GLSL Docs
 
 * https://registry.khronos.org/OpenGL-Refpages/gl4/html/indexflat.php
