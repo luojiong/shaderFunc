@@ -5,6 +5,9 @@
 * http://tobyschachman.com/Shadershop/editor/
 * https://graphtoy.com/
 
+# 动画曲线函数
+*https://easings.net/
+
 # GLSL Docs
 
 * https://registry.khronos.org/OpenGL-Refpages/gl4/html/indexflat.php
