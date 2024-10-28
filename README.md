@@ -21,6 +21,17 @@
 
 # shader functions
 
+## nlerp
+
+```glsl 
+vec3 nlerp(vec3 A, vec3 B, float t) {
+    // 计算插值
+    vec3 result = mix(A, B, t);
+    // 规范化结果
+    return normalize(result);
+}
+
+```
 
 ## Slerp 
 
