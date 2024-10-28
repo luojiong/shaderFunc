@@ -46,6 +46,8 @@ float softMin(float a, float b, float k) {
 ```glsl
    //lerp  线性差值 从 A向量 插值到B 向量
 
+   //waring  lerp 假设 所有参数都是线性的 如果是非线性的 可能回得到被破坏的结果
+
 
  float lerp(float a, float b, float t) {
     return a + t * (b - a);
